@@ -1,0 +1,112 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>엄지 유치원</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+<style>
+
+</style>
+<body>
+<div class="web_wrapper">
+    <div class="web_wrapper_frame">
+        <div class="web_wrapper_frame_wrapper">
+            <div class="nav">
+                <div class="nav_logo">
+                    <div class="nav_hoo_content">로고</div>
+                </div>
+                <div class="nav_list">
+                    <div class="nav_hoo_content">홈버튼</div>
+                </div>
+                <div class="nav_list">
+                    <div class="nav_hoo_content">리스트아이콘</div>
+                </div>
+            </div>
+            <div class="navbar">
+                <div class="navbar_overscroll">
+                    <div class="navbar_list">
+                        <div class="navbar_list_content">
+                            원소개
+                        </div>
+                    </div>
+                    <div class="navbar_list">
+                        <div class="navbar_list_content">
+                            교육안내
+                        </div>
+                    </div>
+                    <div class="navbar_list">
+                        <div class="navbar_list_content">
+                            입학안내
+                        </div>
+                    </div>
+                    <div class="navbar_list">
+                        <div class="navbar_list_content">
+                            월간행사
+                        </div>
+                    </div>
+                    <div class="navbar_list">
+                        <div class="navbar_list_content">
+                            식단표
+                        </div>
+                    </div>
+                    <div class="navbar_list">
+                        <div class="navbar_list_content">
+                            공지사항
+                        </div>
+                    </div>
+                    <div class="navbar_list">
+                        <div class="navbar_list_content">
+                            우리반 </br>이야기
+                        </div>
+                    </div>
+                    <div class="navbar_list">
+                        <div class="navbar_list_content">
+                            전화상담
+                        </div>
+                    </div>
+                    <div class="navbar_list">
+                        <div class="navbar_list_content">
+                            오시는길
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="body">
+                {% block body %}
+                {% endblock %}
+            </div>
+            <div class="footer">
+                <div class="footer_upper">
+                    {% if user.is_authenticated %}
+                        <div class="footer_upper_logout">
+                            <div class="footer_upper_logout_content">로그아웃</div>
+                        </div>
+                    {% else %}
+                        <div class="footer_upper_login">
+                            <div class="footer_upper_login_content"><a href="{% url "login" %}">로그인</a></div>
+                        </div>
+                        <div class="footer_upper_signup">
+                            <div class="footer_upper_signup_content">회원가입</div>
+                        </div>
+                    {% endif %}
+                </div>
+                <div class="footer_down">
+                    <div class="footer_down_address">
+                        <div class="footer_down_address_content">인천광역시 연수구 송도동 24-10<br>032-858-8600</div>
+                    </div>
+                    <div class="footer_down_company">
+                        <div class="footer_down_company_content">&copy;엄지유치원</div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

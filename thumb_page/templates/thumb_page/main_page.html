@@ -1,0 +1,109 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>엄지 유치원</title>
+    <link rel="stylesheet" href="{% static 'css/main_page.css' %}">
+</head>
+<style>
+
+</style>
+<body>
+<div class="web_wrapper">
+    <div class="web_wrapper_frame">
+        <div class="web_wrapper_frame_wrapper">
+            <div class="nav">
+                <div class="nav_logo">
+                    <div class="nav_hoo_content">로고</div>
+                </div>
+                <div class="nav_list">
+                    <div class="nav_hoo_content">홈버튼</div>
+                </div>
+                <div class="nav_list">
+                    <div class="nav_hoo_content">리스트아이콘</div>
+                </div>
+            </div>
+            <div class="body">
+                <div class="body_upper">
+                    <div class="body_upper_picture">사진</div>
+                </div>
+                <div class="body_down">
+                    <div class="body_down_list">
+                        <div class="body_down_list_contents">
+                            <div class="body_down_list_contents_picture"><a href="{% url "intro" %}">아이콘</a></div>
+                            <div class="body_down_list_contents_text"><a href="">원소개</a></div>
+                        </div>
+                        <div class="body_down_list_contents">
+                            <div class="body_down_list_contents_picture"><a href="">아이콘</a></div>
+                            <div class="body_down_list_contents_text"><a href="">교육안내</a></div>
+                        </div>
+                        <div class="body_down_list_contents">
+                            <div class="body_down_list_contents_picture"><a href="">아이콘</a></div>
+                            <div class="body_down_list_contents_text"><a href="">월간행사일정</a></div>
+                        </div>
+                        <div class="body_down_list_contents">
+                            <div class="body_down_list_contents_picture"><a href="">아이콘</a></div>
+                            <div class="body_down_list_contents_text"><a href="">입학안내</a></div>
+                        </div>
+                        <div class="body_down_list_contents">
+                            <div class="body_down_list_contents_picture"><a href="">아이콘</a></div>
+                            <div class="body_down_list_contents_text"><a href="">식단표</a></div>
+                        </div>
+                        <div class="body_down_list_contents">
+                            <div class="body_down_list_contents_picture"><a href="">아이콘</a></div>
+                            <div class="body_down_list_contents_text"><a href="">공지사항</a></div>
+                        </div>
+                        <div class="body_down_list_contents">
+                            <div class="body_down_list_contents_picture"><a href="">아이콘</a></div>
+                            <div class="body_down_list_contents_text"><a href="">우리반이야기</a></div>
+                        </div>
+                        <div class="body_down_list_contents">
+                            <div class="body_down_list_contents_picture"><a href="">아이콘</a></div>
+                            <div class="body_down_list_contents_text"><a href="">전화상담</a></div>
+                        </div>
+                        <div class="body_down_list_contents">
+                            <div class="body_down_list_contents_picture"><a href="">아이콘</a></div>
+                            <div class="body_down_list_contents_text"><a href="">오시는길</a></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="footer">
+                <div class="footer_upper">
+                    {% if user.is_authenticated %}
+                        <div class="footer_upper_logout">
+                            <div class="footer_upper_logout_content">로그아웃</div>
+                        </div>
+                    {% else %}
+                        <div class="footer_upper_login">
+                            <div class="footer_upper_login_content">
+                                로그인
+                            </div>
+                        </div>
+                        <div class="footer_upper_signup">
+                            <div class="footer_upper_signup_content">회원가입</div>
+                        </div>
+                    {% endif %}
+                </div>
+                <div class="footer_down">
+                    <div class="footer_down_address">
+                        <div class="footer_down_address_content">인천광역시 연수구 송도동 24-10<br>032-858-8600</div>
+                    </div>
+                    <div class="footer_down_company">
+                        <div class="footer_down_company_content">&copy;엄지유치원</div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

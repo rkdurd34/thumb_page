@@ -82,11 +82,11 @@
                 <div class="footer_upper">
                     {% if user.is_authenticated %}
                         <div class="footer_upper_logout">
-                            <div class="footer_upper_logout_content">로그아웃</div>
+                            <div class="footer_upper_logout_content"><a href="{% url "thumb_page:logout" %}">로그아웃</a></div>
                         </div>
                     {% else %}
                         <div class="footer_upper_login">
-                            <div class="footer_upper_login_content"><a href="{% url "login" %}">로그인</a></div>
+                            <div class="footer_upper_login_content"><a href="{% url "thumb_page:login" %}">로그인</a></div>
                         </div>
                         <div class="footer_upper_signup">
                             <div class="footer_upper_signup_content">회원가입</div>

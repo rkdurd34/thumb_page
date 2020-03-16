@@ -15,4 +15,8 @@ def login(request):
 def logout(request):
     auth.logout(request)
     return redirect("thumb_page:login")
+def intro_1(request):
+    return render(request, "thumb_page/intro_1.html")
+def intro_2(request):
+    return render(request, "thumb_page/intro_2.html")
 

@@ -1,4 +1,13 @@
 {% extends "thumb_page/base.html" %}
+{% load static %}
+
+{% block head_style %}
+    <link rel="stylesheet" href="{% static 'css/intro.css' %}">
+{% endblock %}
+
+
 {% block body %}
-    <span>intro 페이지</span>
+    <a href="{% url "thumb_page:intro_1" %}"><div class="body_list"><div class="body_list_content">인사말</div></div></a>
+    <a href="{% url "thumb_page:intro_2" %}"><div class="body_list"><div class="body_list_content">운영안내</div></div></a>
+
 {% endblock %}]

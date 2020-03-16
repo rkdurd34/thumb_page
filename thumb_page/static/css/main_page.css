@@ -3,6 +3,11 @@
     padding: 0;
     text-decoration: none;
 }
+a{
+    text-decoration: none;
+    color : black;
+}
+
 
 html, body {
     height: 100%;
@@ -73,25 +78,28 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid lightgray;
-    box-sizing: border-box;
+
 }
 
 .nav_logo {
     width: 60%;
-
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid lightgray;
-    box-sizing: border-box;
+
+
+}
+.nav_logo_content{
+    font-size: 2.7em;
+    font-family: 'Black Han Sans', sans-serif;
 }
 
 .body {
     height: 80%;
     width: 100%;
 
-    border-top: lightgray 1px solid;
+
+
     display: flex;
     flex-direction: column;
 
@@ -100,10 +108,10 @@ html, body {
 .body_upper {
     height: 40%;
     width: 100%;
-    border: 1px solid lightgray;
-    box-sizing: border-box;
+
     display: flex;
     justify-content: center;
+
 }
 .body_upper_picture{
     width:95%;
@@ -113,13 +121,13 @@ html, body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    border-radius: 30px;
 }
 
 .body_down {
     width: 100%;
     height: 60%;
-    border: 1px solid lightgray;
-    box-sizing: border-box;
+
 
 }
 
@@ -137,8 +145,7 @@ html, body {
 .body_down_list_contents {
     width: 32%;
     height: 30%;
-    border: 1px solid lightgray;
-    box-sizing: border-box;
+
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -146,8 +153,7 @@ html, body {
 }
 
 .footer {
-    border-bottom: lightgray 1px solid;
-    border-top: lightgray 1px solid;
+
     width: 100%;
     height: 20%;
     display: flex;
@@ -162,8 +168,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: lightgray 1px solid;
-    border-top: lightgray 1px solid;
+
 }
 
 .footer_upper_login, .footer_upper_signup {
@@ -181,8 +186,7 @@ html, body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    border-bottom: lightgray 1px solid;
-    border-top: lightgray 1px solid;
+
 }
 
 .footer_down_address_content {

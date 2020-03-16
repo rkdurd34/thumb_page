@@ -10,3 +10,7 @@ from . import models
 @admin.register(models.User)
 class CustomerUserAdmin(admin.ModelAdmin):
     pass
+
+
+admin.site.register(Album)
+admin.site.register(Notice)

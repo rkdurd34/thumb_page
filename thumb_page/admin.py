@@ -14,3 +14,4 @@ class CustomerUserAdmin(admin.ModelAdmin):
 
 admin.site.register(Album)
 admin.site.register(Notice)
+admin.site.register(king_class)

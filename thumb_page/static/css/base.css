@@ -54,8 +54,9 @@ html, body {
 .web_wrapper_frame_wrapper {
     height: 100%;
     width: 100%;
-    background-color: #5b80b2;
+    background-color: white;
     overflow-y: scroll;
+    border-radius: 30px;
 
 
 }
@@ -111,6 +112,7 @@ html, body {
 .body {
     min-height: 60%;
     height: 60%;
+    width:100%;
     border-top: lightgray 1px solid;
 
 }

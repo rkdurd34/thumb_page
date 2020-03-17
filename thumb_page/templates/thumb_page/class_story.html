@@ -1,0 +1,23 @@
+{% extends "thumb_page/base.html" %}
+{% load static %}
+
+{% block head_style %}
+    <link rel="stylesheet" href="{% static 'css/class_story.css' %}">
+{% endblock %}
+
+
+{% block body %}
+    <div class="body_class">
+        {% for foo in king_class %}
+            <div class="body_class_icon">
+                <a href="{% url "thumb_page:class_story_list" foo.pk %}"><img src="{{ foo.photo.url }}" style="width:100%;">
+                </a>
+            </div>
+
+
+
+        {% endfor %}
+    </div>
+
+
+{% endblock %}]

@@ -1,0 +1,25 @@
+{% extends "thumb_page/base.html" %}
+{% load static %}
+
+{% block head_style %}
+    <link rel="stylesheet" href="{% static 'css/class_story_list.css' %}">
+{% endblock %}
+
+
+{% block body %}
+    <div class="body_class">
+        {% for foo in certain_album %}
+            <div class="body_class_image_list">
+                <a href=""><img src="{{ foo.photo.url }}" alt="" style="width:90%;"><br>
+                    제목 : {{ foo.title }}<br>
+                    글쓴이 : {{ foo.author }}<br>
+                    내용 : {{ foo.content }}<br>
+                </a>
+            </div>
+
+        {% endfor %}
+
+    </div>
+
+
+{% endblock %}]

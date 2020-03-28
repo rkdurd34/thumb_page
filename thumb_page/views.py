@@ -33,4 +33,7 @@ def class_story_list(request,pk):
 
     return render(request, "thumb_page/class_story_list.html",{"certain_album" : certain_album})
 
+def class_story_list_detail(request,pk):
+    return render(request, "thumb_page/class_story_list_detail.html")
+
 

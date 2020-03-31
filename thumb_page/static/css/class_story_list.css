@@ -1,21 +1,19 @@
-.body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 .body_class{
-    width:80%;
+    width:100%;
     min-height: 100%;
     margin: 0  auto;
     display:flex;
+    justify-content: space-around;
     flex-wrap: wrap;
 
 }
 .body_class_image_list{
-    width:33%;
-
+    width:25%;
+    height:100px;
     text-align: center;
-    padding:5%;
+    padding:3%;
+
 
 
 }

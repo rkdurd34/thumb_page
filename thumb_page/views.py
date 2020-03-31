@@ -29,11 +29,13 @@ def class_story(request):
     return render(request, "thumb_page/class_story.html",{ "king_class": hooah })
 
 def class_story_list(request,pk):
-    certain_album = Album.objects.filter(pk=pk)
+    certain_album = Album.objects.filter(king_class_id=pk)
 
     return render(request, "thumb_page/class_story_list.html",{"certain_album" : certain_album})
 
 def class_story_list_detail(request,pk):
-    return render(request, "thumb_page/class_story_list_detail.html")
+    certain_album = Album.objects.get(id=pk)
+    ctx = { "certain_album" : certain_album }
+    return render(request, "thumb_page/class_story_list_detail.html", ctx)
 
 

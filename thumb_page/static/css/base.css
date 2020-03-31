@@ -117,6 +117,9 @@ html, body {
     width:100%;
     border-top: lightgray 1px solid;
 
+
+    overflow-y: scroll;
+
 }
 
 .footer {

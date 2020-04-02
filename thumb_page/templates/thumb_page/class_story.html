@@ -10,7 +10,9 @@
     <div class="body_class">
         {% for foo in king_class %}
             <div class="body_class_icon">
-                <a href="{% url "thumb_page:class_story_list" foo.pk %}"><img src="{{ foo.photo.url }}" style="width:100%;">
+                <a href="{% url "thumb_page:class_story_list" foo.pk %}">
+                    <span>{{ foo.name }}</span>
+                    {#                    <img src="{{ foo.photo.url }}" style="width:100%;">#}
                 </a>
             </div>
 

@@ -38,7 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-
+    'django_extensions',
+    'qr_code',
+    
     "thumb_page",
 
 
